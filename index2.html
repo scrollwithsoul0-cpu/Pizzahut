@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Hut Clone</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; background:#fff; color:#333; }
+    header { background:#d62828; color:white; padding:20px; text-align:center; }
+    nav { background:#f77f00; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+
+    section { padding:40px 20px; max-width:1200px; margin:auto; }
+    h2 { color:#d62828; margin-bottom:20px; }
+
+    .hero { background:url('https://images.unsplash.com/photo-1601924572445-3eecacbbab29') center/cover no-repeat; color:white; padding:100px 20px; text-align:center; }
+    .hero h1 { font-size:50px; }
+    .hero button { background:#fcbf49; border:none; padding:15px 25px; font-size:18px; margin-top:20px; cursor:pointer; border-radius:5px; }
+    .hero button:hover { background:#ffb703; }
+
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .card { background:#fff; border:1px solid #ccc; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1); text-align:center; }
+    .card img { width:100%; height:180px; object-fit:cover; }
+    .card h3 { margin:10px 0; }
+    .card p { margin:0 0 10px; }
+    .card button { background:#d62828; color:white; border:none; padding:10px 15px; border-radius:5px; cursor:pointer; }
+    .card button:hover { background:#a4161a; }
+
+    form { max-width:500px; margin:auto; }
+    form input, form textarea, form select { width:100%; padding:10px; margin-bottom:15px; border:1px solid #ccc; border-radius:5px; }
+    form button { background:#d62828; color:white; border:none; padding:12px; border-radius:5px; cursor:pointer; }
+    form button:hover { background:#a4161a; }
+
+    footer { background:#333; color:white; text-align:center; padding:20px; }
+    footer a { color:#fcbf49; margin:0 10px; text-decoration:none; }
+    footer a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Pizza Hut 🍕</h1>
+    <p>Hot. Fresh. Delivered to your door.</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#deals">Deals</a>
+    <a href="#cart">Cart</a>
+    <a href="#checkout">Checkout</a>
+    <a href="#locations">Locations</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Homepage -->
+  <section id="home" class="hero">
+    <h1>Welcome to Pizza Hut</h1>
+    <p>Your favorite pizzas, delivered hot & fresh!</p>
+    <button>Order Now</button>
+  </section>
+
+  <!-- About Us -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Pizza Hut is a global leader in serving delicious pizzas with fresh ingredients. Since our founding, we’ve committed to bringing families and friends together with hot, cheesy pizzas, pastas, and sides made with love.</p>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601924572445-3eecacbbab29" alt="Margherita">
+        <h3>Margherita</h3>
+        <p>₹299</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601924572445-3eecacbbab29" alt="Pepperoni">
+        <h3>Pepperoni</h3>
+        <p>₹399</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1601924572445-3eecacbbab29" alt="Veggie Delight">
+        <h3>Veggie Delight</h3>
+        <p>₹349</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals -->
+  <section id="deals">
+    <h2>Deals & Offers</h2>
+    <p>🔥 Buy 1 Get 1 Free on Wednesdays</p>
+    <p>🍕 Family Combo (2 Large Pizzas + 2 Drinks) – ₹999</p>
+    <p>🎉 20% Off for Students</p>
+  </section>
+
+  <!-- Cart -->
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <p>No items in cart. Start ordering now!</p>
+  </section>
+
+  <!-- Checkout -->
+  <section id="checkout">
+    <h2>Checkout</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Delivery Address" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Payment Method</option>
+        <option>Cash on Delivery</option>
+        <option>UPI</option>
+        <option>Credit/Debit Card</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Locations -->
+  <section id="locations">
+    <h2>Our Locations</h2>
+    <p>📍 New Delhi – Connaught Place</p>
+    <p>📍 Mumbai – Bandra West</p>
+    <p>📍 Bengaluru – MG Road</p>
+  </section>
+
+  <!-- Feedback -->
+  <section id="feedback">
+    <h2>Customer Feedback</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Write your feedback..." rows="5" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Email:</strong> support@pizzahut.com</p>
+    <p><strong>Address:</strong> 123 Pizza Street, New Delhi</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pizza Hut Clone. All Rights Reserved.</p>
+    <p>
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms & Conditions</a> | 
+      <a href="#">FAQ</a>
+    </p>
+  </footer>
+
+</body>
+</html>
